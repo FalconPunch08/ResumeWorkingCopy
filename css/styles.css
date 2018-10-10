@@ -1,0 +1,159 @@
+/*Page Colors
+-----------------
+#DDD1C7 pink cream
+#C2CFB2 light green
+#8DB580 middle green
+#7E8987 grey blue
+#4B4A67 kind purple
+-------------------
+*/
+
+
+/* global colors
+------------------*/
+
+html{
+	box-sizing: border-box;
+}
+
+*,*:before, *:after{
+	box-sizing:inherit;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+	margin: 0;
+}
+
+h1,h2{
+   font-family: 'Raleway', sans-serif; 
+}
+
+h1{
+	font-size: 70px;
+}
+
+h2{
+	font-size:32px;
+	margin-top:0;
+}
+h3{
+	margin:0;
+}
+
+ul li{
+	padding-top:3px;
+	padding-bottom:3px;
+}
+
+.content-wrap{
+	max-width: 1500px;
+	margin: 0 auto;
+	padding: 50px;
+	overflow: hidden;
+	
+}
+
+
+.uppercase{
+	text-transform: uppercase;
+}
+
+a {
+    color:#DDD1C7;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+
+
+/* header and footer
+------------------*/
+
+/*header*/
+header{
+    background:#7E8987;
+	padding-top: 50px;
+}
+
+nav{
+	text-align: center;
+	position: fixed;
+	background: cadetblue;
+	width: 100%;
+	top: 0;
+}
+nav a {
+	display: inline-block;
+	padding: 15px 20px;	
+	text-decoration:none;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+header h1, header h2 {
+    color:white;
+	margin: 0;
+}
+.profile-image{
+	border-radius: 50%;
+	margin-right: 30px;
+}
+/*footer*/
+footer{
+	background:#7E8987;
+	text-align: center;
+}
+
+.contact-info a{
+	margin:10px;
+}
+
+/* education
+------------------*/
+    
+.education{
+    background: #c2cfb2;
+}
+p + h3{
+	margin-top: 30px;
+}
+
+/* work experience
+------------------*/
+.work{
+    background:#8DB580;
+}
+h3 ~ p{
+	margin-bottom:3px;
+}
+.job-description p:first-of-type{
+	margin-top: 0;
+}
+/* Media Queries-----
+-------------------*/
+@media ( min-width:900px){
+	.col-wide{
+	width: 70%;
+	float:left;
+	min-height:175px;
+	padding-left:15px;
+	
+}
+.col-narrow{
+	width: 30%;
+	float:left;
+	min-height:175px;
+	padding-left:15px;
+}
+}
+@media(max-width:899px){
+	header{text-align:center;
+	}
+	.profile-image{
+		width:200px;
+	}
+}
+
+
